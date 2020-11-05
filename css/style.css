@@ -11,7 +11,7 @@ body {
 #section-top {
   height: 80px;
   width: 100%;
-  background-color: #090909;
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@ aside {
   height: 100%;
   width: 250px;
   padding: 15px;
-  background-color: #040404;
+  background-color: lightgreen;
   float: left;
   position: fixed;
   top: 0;
@@ -56,9 +56,9 @@ aside img {
 #section-content {
   height: 700px;
   width: calc(100% - 250px);
-  margin-top: 80px;
+  padding-top: 80px;
   margin-left: 250px;
-  background-color: #121212;
+  background-color: orange;
   float: left;
 }
 #menu {
@@ -76,7 +76,7 @@ aside img {
 footer {
   height: 90px;
   width: 100%;
-  background-color: #272727;
+  background-color: brown;
   position: fixed;
   bottom: 0;
   left: 0;
