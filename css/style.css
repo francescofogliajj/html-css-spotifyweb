@@ -193,42 +193,33 @@ footer {
   height: 90px;
   background-color: brown;
   color: white;
-}
-footer::after {
-  content: "";
-  display: table;
-  clear: both;
+  display: flex;
 }
 
-.left,
-.right {
-  float: left;
+
+.left {
   height: 90px;
   width: 20%;
+  display: flex;
+  align-items: center;
 }
-.center {
-  float: left;
-  height: 90px;
-  width: 60%;
-  text-align: center;
-}
-.right {
-  text-align: right;
-}
-
 .left img {
   height: 60%;
 }
 .left img,
 .left p,
 .left i {
-  display: inline-block;
-  vertical-align: middle;
   margin: 5px;
 }
 
+
+.center {
+  height: 90px;
+  width: 60%;
+  text-align: center;
+  padding: 10px;
+}
 .center i {
-  display: inline-block;
   margin: 0px 5px;
   font-size: 18px;
 }
@@ -251,12 +242,20 @@ footer::after {
   border-radius: 2px;
 }
 
+
+.right {
+  height: 90px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.right {
+  justify-content: flex-end;
+}
 .right i {
-  display: inline-block;
   margin: 5px;
 }
 .volume {
-  display: inline-block;
   width: 150px;
   border-radius: 2px;
   background-color: grey;
