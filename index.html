@@ -3,37 +3,199 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
+    <!-- /font-awesome cdn -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- /Google Fonts -->
+
     <link rel="stylesheet" href="css/style.css">
-    <title>Spotify Web</title>
+    <title>Spotify - Web Player: Music for everyone</title>
   </head>
   <body>
 
-    <section id="section-top">
-        <a href="#">Effettua L'Upgrade</a>
-    </section>
+    <!-- wrapper grande quanto la viewport -->
+    <div class="wrapper">
 
-    <main>
+      <!-- main -->
+      <main>
 
-      <aside class="">
-        <a href="#">
-          <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify_Logo">
-        </a>
-      </aside>
+        <section class="main-nav">
 
-      <section id="section-content">
-        <ul id="menu">
-          <li>In Evidenza</li>
-          <li>Podcast</li>
-          <li>Classifiche</li>
-          <li>Generi e Mood</li>
-          <li>Nuove Uscite</li>
-          <li>Scopri</li>
-        </ul>
-      </section>
+          <div class="nav-top">
+            <div class="nav-logo">
+              <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify Logo">
+            </div>
+            <div class="nav-menu">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-home"></i>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-search"></i>
+                    Cerca</a>
+                  </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-record-vinyl"></i>
+                    La tua libreria
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-playlist">
+              <h2>Playlist</h2>
+              <a href="#" class="btn_plus">Crea Playlist</a>
+              <ul id="playlists">
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+              </ul>
+            </div>
+          </div>
 
-    </main>
+          <div class="nav-bottom">
+            <a href="#">
+              <i class="fas fa-download"></i>
+              Installa app
+            </a>
+            <hr>
+            <div>
+              <i class="fas fa-user"></i>
+              John Doe
+            </div>
+          </div>
 
-    <footer></footer>
+        </section>
+
+        <section class="main-content">
+
+          <div class="cta">
+            <a href="#">Effettua l'upgrade</a>
+          </div>
+
+          <ul id="content-menu">
+            <li>
+              In Evidenza
+              <button type="button" name="button"></button>
+            </li>
+            <li>Podcast</li>
+            <li>Classifiche</li>
+            <li>Generi e Mood</li>
+            <li>Nuove Uscite</li>
+            <li>Scopri</li>
+          </ul>
+
+          <h2>Recently Played</h2>
+          <ul id="recently-played">
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="Master of Puppets">
+              <h3>Metallica</h3>
+              <h4>Master of Puppets</h4>
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="">
+              <h3>Metallica</h3>
+              <h4>Master of Puppets</h4>
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="">
+              <h3>Metallica</h3>
+              <h4>Master of Puppets</h4>
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="">
+              <h3>Metallica</h3>
+              <h4>Master of Puppets</h4>
+            </li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="">
+              <h3>Metallica</h3>
+              <h4>Master of Puppets</h4></li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="">
+              <h3>Metallica</h3>
+              <h4>Master of Puppets</h4>
+            </li>
+          </ul>
+
+          <h2>Creato per John Doe</h2>
+          <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+          <ul id="john-doe">
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="">
+              <h3>Metallica</h3>
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="">
+              <h3>Metallica</h3>
+            </li>
+          </ul>
+
+          <h2>Artisti pi&ugrave; popolari</h2>
+          <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+          <ul id="populars">
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="">
+              <h3>Metallica</h3>
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="">
+              <h3>Metallica</h3>
+            </li>
+          </ul>
+
+        </section>
+
+      </main>
+      <!-- /main -->
+
+      <!-- footer -->
+      <footer>
+
+        <div class="left">
+          <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg" alt="">
+          <p>Metallica<br>
+            Master of Puppets</p>
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+
+        <div class="center">
+          <div class="player-icons">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+          </div>
+            <span>0:25</span>
+            <div class="reproduction">
+              <hr>
+            </div>
+            <span>4:35</span>
+        </div>
+
+        <div class="right">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-tv"></i>
+          <i class="fas fa-volume-up"></i>
+          <div class="volume">
+            <hr>
+          </div>
+        </div>
+
+      </footer>
+      <!-- /footer -->
+    </div>
 
   </body>
 </html>
