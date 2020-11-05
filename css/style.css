@@ -122,6 +122,7 @@ main {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 2;
   width: calc(100% - 250px);
   height: 90px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -194,6 +195,10 @@ footer {
   background-color: brown;
   color: white;
   display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
 }
 
 
