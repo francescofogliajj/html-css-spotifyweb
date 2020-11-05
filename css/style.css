@@ -148,9 +148,9 @@ main {
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   text-transform: uppercase;
   cursor: pointer;
-  color: white;
 }
 #content-menu li {
   margin: 0 10px;
@@ -164,26 +164,20 @@ button {
   background-color: yellow;
 }
 
-#recently-played {
+#recently-played,
+#john-doe,
+#populars {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   text-align: center;
-  color: white;
 }
 #recently-played img,
 #john-doe img,
 #populars img {
   height: 200px;
 }
-
-#john-doe,
-#populars {
-  list-style: none;
-  display: flex;
-  text-align: center;
-  color: white;
-}
+#recently-played li,
 #john-doe li,
 #populars li {
   margin-right: 5px;
@@ -195,6 +189,7 @@ footer {
   background-color: brown;
   color: white;
   display: flex;
+  justify-content: space-between;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -204,7 +199,6 @@ footer {
 
 .left {
   height: 90px;
-  width: 20%;
   display: flex;
   align-items: center;
 }
@@ -212,17 +206,21 @@ footer {
   height: 60%;
 }
 .left img,
-.left p,
 .left i {
   margin: 5px;
+}
+.left a {
+  text-decoration: none;
+  color: white;
 }
 
 
 .center {
   height: 90px;
-  width: 60%;
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .center i {
   margin: 0px 5px;
@@ -231,17 +229,17 @@ footer {
 .center i:nth-child(3) {
   font-size: 30px;
 }
-.center span {
-  display: inline-block;
+#reproduction-time {
+  display: flex;
+  align-items: center;
 }
-.reproduction {
-  display: inline-block;
-  margin: 0 auto;
+.reproduction-bar {
+  margin: 0 5px;
   width: 400px;
   border-radius: 2px;
   background-color: grey;
 }
-.reproduction hr {
+.reproduction-bar hr {
   width: 80px;
   border: 3px solid white;
   border-radius: 2px;
@@ -250,12 +248,9 @@ footer {
 
 .right {
   height: 90px;
-  width: 20%;
   display: flex;
-  align-items: center;
-}
-.right {
   justify-content: flex-end;
+  align-items: center;
 }
 .right i {
   margin: 5px;
