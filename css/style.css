@@ -18,13 +18,11 @@ body {
 main {
   display: flex;
   height: calc(100% - 90px);
-  /* background-color: grey; */
   overflow-y: hidden;
 }
 .main-nav {
   width: 250px;
   height: 100%;
-  /* background-color: yellow; */
   overflow-y: hidden;
   min-height: 480px;
 }
@@ -34,7 +32,7 @@ main {
   flex-direction: column;
   width: 100%;
   height: calc(100% - 90px);
-  background-color: lightgreen;
+  background-color: #040404;
   overflow: hidden;
 }
 .nav-logo img:first-child {
@@ -75,7 +73,6 @@ main {
 .nav-playlist {
   padding: 10px;
   overflow: hidden;
-  /* flex-shrink: 0; */
 }
 .nav-playlist h3 {
   text-transform: uppercase;
@@ -123,7 +120,7 @@ main {
   width: 100%;
   height: 90px;
   padding: 20px;
-  background-color: lightblue;
+  background-color: #040404;
 }
 .nav-bottom a {
   text-decoration: none;
@@ -138,10 +135,9 @@ main {
 }
 
 .main-content{
-  /* height: 100%; */
   width: calc(100% - 250px);
   padding: 110px 20px 20px;
-  background-color: orange;
+  background-color: #121212;
   overflow-y: auto;
 }
 
@@ -152,7 +148,7 @@ main {
   z-index: 2;
   width: calc(100% - 250px);
   height: 90px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -262,11 +258,11 @@ button {
   opacity: 1;
 }
 
-
+/* Player */
 footer {
   width: 100%;
   height: 90px;
-  background-color: brown;
+  background-color: #282828;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -353,7 +349,6 @@ footer i {
   opacity: 1;
 }
 
-
 .right {
   height: 90px;
   display: flex;
@@ -390,6 +385,7 @@ footer i {
 .volume:hover #circle-2  {
   opacity: 1;
 }
+/* /Player */
 
 
 @media screen and (max-width: 767px) {
