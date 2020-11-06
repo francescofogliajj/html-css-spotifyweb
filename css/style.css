@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .wrapper {
@@ -17,13 +18,13 @@ body {
 main {
   display: flex;
   height: calc(100% - 90px);
-  background-color: grey;
+  /* background-color: grey; */
   overflow-y: hidden;
 }
 .main-nav {
   width: 250px;
   height: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
   overflow-y: hidden;
   min-height: 480px;
 }
@@ -54,9 +55,16 @@ main {
 .nav-menu li:first-child {
   border-left: 3px solid yellow;
 }
+.nav-menu li:first-child a {
+  color: white;
+}
 .nav-menu a {
   text-decoration: none;
-  color: white;
+  color: #B3B3B3;
+}
+.nav-menu i {
+  font-size: 22px;
+  margin-right: 10px;
 }
 
 .nav-playlist {
@@ -65,7 +73,6 @@ main {
   /* flex-shrink: 0; */
 }
 .nav-playlist h2 {
-  color: white;
 }
 .nav-playlist ul {
   list-style: none;
@@ -75,7 +82,7 @@ main {
 }
 .nav-playlist a {
   text-decoration: none;
-  color: white;
+  color: #B3B3B3;
 }
 #playlists {
   height: 60%;
@@ -108,10 +115,14 @@ main {
 }
 .nav-bottom a {
   text-decoration: none;
-  color: white;
+  color: #B3B3B3;
 }
 .nav-bottom div {
-  color: white;
+  /* color: white; */
+}
+.nav-bottom hr {
+  border-color: white;
+  background-color: white;
 }
 
 .main-content{
@@ -146,7 +157,7 @@ main {
 }
 
 .main-content {
-  color: white;
+  /* color: white; */
 }
 #content-menu {
   list-style: none;
@@ -158,6 +169,8 @@ main {
 }
 #content-menu li {
   margin: 0 10px;
+  color: #B3B3B3;
+  font-weight: bold;
 }
 button {
   margin: 0 auto;
@@ -166,6 +179,17 @@ button {
   border-radius: 2px;
   border: 2px solid yellow;
   background-color: yellow;
+}
+
+.main-content h2 {
+  margin: 30px 0 10px 0;
+}
+.main-content h3,
+.main-content h4 {
+  margin: 5px 0;
+}
+.main-content p {
+  margin: 10px 0;
 }
 
 #recently-played,
