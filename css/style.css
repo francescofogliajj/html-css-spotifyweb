@@ -215,6 +215,33 @@ button {
   border-radius: 50%;
 }
 
+.position-relative {
+  position: relative;
+}
+.overlay {
+  height: calc(100% - 4px);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.fa-play-circle {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.position-relative:hover .overlay {
+  opacity: 1;
+}
+.position-relative:hover .fa-play-circle {
+  opacity: 1;
+}
+
 
 footer {
   width: 100%;
