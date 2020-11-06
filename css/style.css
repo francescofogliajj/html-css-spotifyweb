@@ -115,6 +115,9 @@ main {
   color: black;
   margin-right: 10px;
 }
+.btn_plus:hover:before {
+  background-color: white;
+}
 
 .nav-bottom {
   width: 100%;
