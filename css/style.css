@@ -227,7 +227,7 @@ button {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
 }
-.fa-play-circle {
+#play-album {
   font-size: 50px;
   position: absolute;
   top: 50%;
@@ -238,7 +238,7 @@ button {
 .position-relative:hover .overlay {
   opacity: 1;
 }
-.position-relative:hover .fa-play-circle {
+.position-relative:hover #play-album {
   opacity: 1;
 }
 
