@@ -36,9 +36,13 @@ main {
   background-color: lightgreen;
   overflow: hidden;
 }
-.nav-logo img {
+.nav-logo img:first-child {
   width: 80%;
   padding: 10px;
+}
+.nav-logo img:last-child {
+  height: 50px;
+  margin: 5px;
 }
 
 .nav-menu ul {
@@ -275,22 +279,64 @@ footer {
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 767px) {
 
-  #recently-played li,
-  #john-doe li,
-  #populars li {
-    width: calc(100% / 4);
+  .main-nav {
+    width: 60px;
+  }
+  .nav-top img:first-child {
+    display: none;
+  }
+  .nav-menu span {
+    display: none;
+  }
+  .nav-playlist {
+    display: none;
+  }
+  .nav-bottom span {
+    display: none;
   }
 
-}
+  .main-content {
+    width: calc(100% - 60px);
+  }
+  .cta {
+    width: calc(100% - 60px);
+  }
 
-@media screen and (max-width: 767px) {
 
   #recently-played li,
   #john-doe li,
   #populars li {
     width: calc(100% / 2);
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .nav-logo img:last-child {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  #recently-played li,
+  #john-doe li,
+  #populars li {
+    width: calc(100% / 2);
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  #recently-played li,
+  #john-doe li,
+  #populars li {
+    width: calc(100% / 4);
   }
 
 }
