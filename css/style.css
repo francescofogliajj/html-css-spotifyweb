@@ -169,19 +169,24 @@ button {
 #populars {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   text-align: center;
-}
-#recently-played img,
-#john-doe img,
-#populars img {
-  height: 200px;
 }
 #recently-played li,
 #john-doe li,
 #populars li {
-  margin-right: 5px;
+  width: calc(100% / 6);
+  padding-right: 5px;
 }
+#recently-played img,
+#john-doe img,
+#populars img {
+  width: 100%;
+}
+#populars img {
+  border-radius: 50%;
+}
+
 
 footer {
   width: 100%;
