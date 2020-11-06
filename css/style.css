@@ -40,10 +40,12 @@ main {
 .nav-logo img:first-child {
   width: 80%;
   padding: 10px;
+  cursor: pointer;
 }
 .nav-logo img:last-child {
   height: 50px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .nav-menu ul {
@@ -62,6 +64,9 @@ main {
   text-decoration: none;
   color: #B3B3B3;
 }
+.nav-menu a:hover {
+  color: white;
+}
 .nav-menu i {
   font-size: 22px;
   margin-right: 10px;
@@ -72,7 +77,8 @@ main {
   overflow: hidden;
   /* flex-shrink: 0; */
 }
-.nav-playlist h2 {
+.nav-playlist h3 {
+  text-transform: uppercase;
 }
 .nav-playlist ul {
   list-style: none;
@@ -83,6 +89,9 @@ main {
 .nav-playlist a {
   text-decoration: none;
   color: #B3B3B3;
+}
+.nav-playlist a:hover {
+  color: white;
 }
 #playlists {
   height: 60%;
@@ -102,8 +111,8 @@ main {
   height: 35px;
   line-height: 35px;
   text-align: center;
-  background-color: grey;
-  color: white;
+  background-color: #B3B3B3;
+  color: black;
   margin-right: 10px;
 }
 
@@ -117,8 +126,8 @@ main {
   text-decoration: none;
   color: #B3B3B3;
 }
-.nav-bottom div {
-  /* color: white; */
+.nav-bottom a:hover {
+  color: white;
 }
 .nav-bottom hr {
   border-color: white;
@@ -153,12 +162,12 @@ main {
   border: 1px solid white;
   padding: 10px 20px;
   border-radius: 20px;
-  /* margin-right: 20px; */
+  font-size: 14px;
+}
+.cta a:hover {
+  font-size: 16px;
 }
 
-.main-content {
-  /* color: white; */
-}
 #content-menu {
   list-style: none;
   display: flex;
@@ -171,6 +180,9 @@ main {
   margin: 0 10px;
   color: #B3B3B3;
   font-weight: bold;
+}
+#content-menu li:hover {
+  color: white;
 }
 button {
   margin: 0 auto;
@@ -188,8 +200,12 @@ button {
 .main-content h4 {
   margin: 5px 0;
 }
+.main-content h4 {
+  color: #B3B3B3;
+}
 .main-content p {
   margin: 10px 0;
+  color: #B3B3B3;
 }
 
 #recently-played,
@@ -217,6 +233,7 @@ button {
 
 .position-relative {
   position: relative;
+  cursor: pointer;
 }
 .overlay {
   height: calc(100% - 4px);
@@ -255,25 +272,34 @@ footer {
   left: 0;
   z-index: 3;
 }
-
+footer i {
+  cursor: pointer;
+}
 
 .left {
   height: 90px;
   display: flex;
   align-items: center;
 }
-.left img {
-  height: 60%;
+.left a img {
+  height: 50px;
 }
 .left img,
 .left i {
   margin: 5px;
+  color: #B3B3B3;
 }
 .left a {
   text-decoration: none;
+  color: #B3B3B3;
+}
+.left a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.left i:hover {
   color: white;
 }
-
 
 .center {
   height: 90px;
@@ -283,27 +309,45 @@ footer {
   align-items: center;
 }
 .center i {
-  margin: 0px 5px;
+  margin: 0px 7px;
   font-size: 18px;
 }
 .center i:nth-child(3) {
-  font-size: 30px;
+  font-size: 28px;
+}
+.center i:nth-child(3):hover {
+  font-size: 36px;
 }
 #reproduction-time {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .reproduction-bar {
   margin: 0 5px;
   width: 400px;
   border-radius: 2px;
   background-color: grey;
+  cursor: pointer;
 }
 .reproduction-bar hr {
   width: 20%;
   border: 3px solid white;
   border-radius: 2px;
   background-color: white;
+}
+.reproduction-bar:hover hr {
+  border: 3px solid yellow;
+  background-color: yellow;
+}
+#circle-1 {
+  position: absolute;
+  left: 21%;
+  top: 5%;
+  opacity: 0;
+}
+.reproduction-bar:hover #circle-1  {
+  opacity: 1;
 }
 
 
@@ -321,12 +365,27 @@ footer {
   border-radius: 2px;
   background-color: grey;
   margin-right: 10px;
+  cursor: pointer;
+  position: relative;
 }
 .volume hr {
   width: 20%;
   border: 3px solid white;
   border-radius: 2px;
   background-color: white;
+}
+.volume:hover hr {
+  border: 3px solid yellow;
+  background-color: yellow;
+}
+#circle-2 {
+  position: absolute;
+  left: 11%;
+  top: -10px;
+  opacity: 0;
+}
+.volume:hover #circle-2  {
+  opacity: 1;
 }
 
 
