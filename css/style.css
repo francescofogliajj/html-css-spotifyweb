@@ -239,6 +239,9 @@ button {
 }
 #populars img {
   border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .position-relative {
@@ -254,7 +257,7 @@ button {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
 }
-#play-album {
+.play-album {
   font-size: 50px;
   position: absolute;
   top: 50%;
@@ -265,7 +268,7 @@ button {
 .position-relative:hover .overlay {
   opacity: 1;
 }
-.position-relative:hover #play-album {
+.position-relative:hover .play-album {
   opacity: 1;
 }
 
