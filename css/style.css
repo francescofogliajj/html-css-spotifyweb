@@ -424,7 +424,6 @@ footer i {
     width: calc(100% - 60px);
   }
 
-
   #recently-played li,
   #john-doe li,
   #populars li {
@@ -436,6 +435,37 @@ footer i {
   }
   .volume {
     width: 35px;
+  }
+
+}
+
+@media screen and (max-width: 567px) {
+
+  footer img {
+    height: 30px !important;
+  }
+  footer h4,
+  footer a,
+  footer span {
+    font-size: 10px !important;
+  }
+  footer i {
+    font-size: 12px !important;
+    margin: 3px !important;
+  }
+
+  .center i:nth-child(3) {
+    font-size: 20px !important;
+  }
+  .center i:nth-child(3):hover {
+    font-size: 26px !important;
+  }
+
+  .reproduction-bar {
+    width: 70px;
+  }
+  .volume {
+    width: 25px;
   }
 
 }
