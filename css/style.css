@@ -105,13 +105,16 @@ main {
 .btn_plus::before {
   content: "+";
   display: inline-block;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   background-color: #B3B3B3;
-  color: black;
+  color: #040404;
   margin-right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  vertical-align: middle;
 }
 .btn_plus:hover:before {
   background-color: white;
