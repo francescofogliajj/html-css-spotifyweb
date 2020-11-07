@@ -123,8 +123,11 @@ main {
 .nav-bottom {
   width: 100%;
   height: 90px;
-  padding: 20px;
+  padding: 10px 20px;
   background-color: #040404;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .nav-bottom a {
   text-decoration: none;
@@ -133,9 +136,13 @@ main {
 .nav-bottom a:hover {
   color: white;
 }
+.nav-bottom i {
+  font-size: 22px;
+  margin-right: 10px;
+}
 .nav-bottom hr {
-  border-color: white;
-  background-color: white;
+  border-color: #B3B3B3;
+  background-color: #B3B3B3;
 }
 
 .main-content{
