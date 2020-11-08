@@ -360,9 +360,10 @@ footer i {
   background-color: yellow;
 }
 #circle-1 {
+  font-size: 15px;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 19%;
+  top: 3px;
   transform: translate(-50%, -50%);
   opacity: 0;
 }
@@ -398,9 +399,10 @@ footer i {
   background-color: yellow;
 }
 #circle-2 {
+  font-size: 15px;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 17%;
+  top: -2px;
   transform: translate(-50%, -50%);
   opacity: 0;
 }
@@ -477,6 +479,11 @@ footer i {
   }
   .volume {
     width: 25px;
+  }
+
+  #circle-1,
+  #circle-2 {
+    top: 0;
   }
 
 }
