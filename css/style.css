@@ -7,6 +7,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: white;
+  font-size: 15px;
 }
 
 .wrapper {
@@ -20,6 +21,8 @@ main {
   height: calc(100% - 90px);
   overflow-y: hidden;
 }
+
+/* Navbar - Spotify */
 .main-nav {
   width: 250px;
   height: 100%;
@@ -144,7 +147,9 @@ main {
   border-color: #B3B3B3;
   background-color: #B3B3B3;
 }
+/* /Navbar - Spotify */
 
+/* Playlists */
 .main-content{
   width: calc(100% - 250px);
   padding: 110px 20px 20px;
@@ -271,6 +276,7 @@ button {
 .position-relative:hover .play-album {
   opacity: 1;
 }
+/* /Playlists */
 
 /* Player */
 footer {
@@ -356,7 +362,7 @@ footer i {
 #circle-1 {
   position: absolute;
   left: 21%;
-  top: 5%;
+  top: 0;
   opacity: 0;
 }
 .reproduction-bar:hover #circle-1  {
@@ -393,7 +399,7 @@ footer i {
 #circle-2 {
   position: absolute;
   left: 11%;
-  top: -10px;
+  top: -9px;
   opacity: 0;
 }
 .volume:hover #circle-2  {
