@@ -360,10 +360,11 @@ footer i {
   background-color: yellow;
 }
 #circle-1 {
+  margin: 0;
   font-size: 15px;
   position: absolute;
-  left: 19%;
-  top: 3px;
+  left: 20%;
+  top: 4px;
   transform: translate(-50%, -50%);
   opacity: 0;
 }
@@ -399,10 +400,11 @@ footer i {
   background-color: yellow;
 }
 #circle-2 {
+  margin: 0;
   font-size: 15px;
   position: absolute;
-  left: 17%;
-  top: -2px;
+  left: 20%;
+  top: 4px;
   transform: translate(-50%, -50%);
   opacity: 0;
 }
