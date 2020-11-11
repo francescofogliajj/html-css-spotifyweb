@@ -13,7 +13,6 @@ body {
 .wrapper {
   width: 100%;
   height: 100vh;
-  background-color: black;
 }
 
 main {
@@ -359,7 +358,8 @@ footer i {
   border: 3px solid yellow;
   background-color: yellow;
 }
-#circle-1 {
+#circle-1,
+#circle-2 {
   margin: 0;
   font-size: 15px;
   position: absolute;
@@ -398,15 +398,6 @@ footer i {
 .volume:hover hr {
   border: 3px solid yellow;
   background-color: yellow;
-}
-#circle-2 {
-  margin: 0;
-  font-size: 15px;
-  position: absolute;
-  left: 20%;
-  top: 4px;
-  transform: translate(-50%, -50%);
-  opacity: 0;
 }
 .volume:hover #circle-2  {
   opacity: 1;
