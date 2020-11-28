@@ -326,17 +326,24 @@ footer i {
   justify-content: center;
   align-items: center;
 }
-.center i {
-  margin: 0px 5px;
+.icons {
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+.icons i {
+  width: 40px;
+  text-align: center;
   font-size: 18px;
 }
-.center i:nth-child(3) {
+.icons i:nth-child(3) {
   font-size: 28px;
 }
-.center i:nth-child(3):hover {
+.icons i:nth-child(3):hover {
   font-size: 36px;
 }
-#reproduction-time {
+.reproduction-time {
+  height: 50%;
   display: flex;
   align-items: center;
 }
@@ -437,7 +444,7 @@ footer i {
   }
 
   .reproduction-bar {
-    width: 100px;
+    width: 120px;
   }
   .volume {
     width: 35px;
@@ -460,10 +467,15 @@ footer i {
     margin: 3px !important;
   }
 
-  .center i:nth-child(3) {
+  .icons i {
+    margin: 0 !important;
+    width: 25px;
+    text-align: center;
+  }
+  .icons i:nth-child(3) {
     font-size: 20px !important;
   }
-  .center i:nth-child(3):hover {
+  .icons i:nth-child(3):hover {
     font-size: 26px !important;
   }
 
